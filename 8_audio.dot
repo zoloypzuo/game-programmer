@@ -26,6 +26,8 @@ digraph {
             audiobegin [label="游戏音频编程"]
         }
 
+        node [shape="box", style="rounded,filled", color="#c7c7ff", fontname="Helvetica-Light", fontsize=10, penwidth=0.5]
+
         gameaudioprogramming [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/gameaudioprogramming.jpg"/></TD></TR><TR><TD>Game Audio<br/>Programming (2016)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/149874673X/"]
         gettingstartedcppaudio [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/gettingstartedcppaudio.jpg"/></TD></TR><TR><TD>Getting Started<br/>with C++ Audio Programming<br/>for Game Development (2013)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1849699097/"]
 

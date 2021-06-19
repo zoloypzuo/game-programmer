@@ -37,6 +37,8 @@ digraph {
             gameenginedesign2 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/gameenginedesign2.jpg"/></TD></TR><TR><TD>3D Game Engine<br/>Design<br/>2nd Ed (2006)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/0122290631/"]
         }
 
+        node [shape="box", style="rounded,filled", color="#c7c7ff", fontname="Helvetica-Light", fontsize=10, penwidth=0.5]
+
         gameenginegems1 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/gameenginegems1.jpg"/></TD></TR><TR><TD>Game Engine<br/>Gems 1 (2010)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/0763778885/"]
         gameenginegems2 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/gameenginegems2.jpg"/></TD></TR><TR><TD>Game Engine<br/>Gems 2 (2011)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1568814372/"]
         gameenginegems3 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/gameenginegems3.jpg"/></TD></TR><TR><TD>Game Engine<br/>Gems 3 (2016)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1498755658/"]

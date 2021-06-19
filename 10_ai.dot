@@ -28,6 +28,8 @@ digraph {
             aimisc [label="游戏AI文选"]
         }
 
+        node [shape="box", style="rounded,filled", color="#c7c7ff", fontname="Helvetica-Light", fontsize=10, penwidth=0.5]
+
         aiforgames2 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/aiforgames2.jpg"/></TD></TR><TR><TD>Artificial Intelligence<br/>for Games 2nd Ed (2009)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/0123747317/"]
         aiforgd [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/aiforgd.jpg"/></TD></TR><TR><TD>游戏开发中的人工智能<br/>(2006)</TD></TR></TABLE>> URL="https://book.douban.com/subject/1899340/"]
         proggameaibyexample [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/proggameaibyexample.jpg"/></TD></TR><TR><TD>游戏人工智能编程<br/>案例精粹<br/>(2012)</TD></TR></TABLE>> URL="https://book.douban.com/subject/19930152/"]

@@ -26,8 +26,9 @@ digraph {
             sebegin [label="软件开发新手"]
             sepractice [label="实践"]
             dp [label="设计模式"]
-            uml [label="UML"]
         }
+
+        node [shape="box", style="rounded,filled", color="#c7c7ff", fontname="Helvetica-Light", fontsize=10, penwidth=0.5]
 
         mythicalmanmonth2 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/mythicalmanmonth2.jpg"/></TD></TR><TR><TD>人月神话<br/>(2007)</TD></TR></TABLE>> URL="https://book.douban.com/subject/2230248/"]
 
@@ -41,10 +42,6 @@ digraph {
         cleancode [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/cleancode.jpg"/></TD></TR><TR><TD>编码整洁之道<br/>(2012)</TD></TR></TABLE>> URL="https://book.douban.com/subject/11602008/"]
         refactoring [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/refactoring.jpg"/></TD></TR><TR><TD>重构<br/>(2010)</TD></TR></TABLE>> URL="https://book.douban.com/subject/4262627/"]
         workingeffectivelylegacycode [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/workingeffectivelylegacycode.jpg"/></TD></TR><TR><TD>修改代码的艺术<br/>(2014)</TD></TR></TABLE>> URL="https://book.douban.com/subject/25904007/"]
-
-        umldistilled3 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/umldistilled3.jpg"/></TD></TR><TR><TD>UML精粹<br/>(2012)</TD></TR></TABLE>> URL="https://book.douban.com/subject/10798193/"]
-        umluserguide2 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/umluserguide2.jpg"/></TD></TR><TR><TD>UML用户指南<br/>(2006)</TD></TR></TABLE>> URL="https://book.douban.com/subject/1837454/"]
-        ooadwa3 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/ooadwa3.jpg"/></TD></TR><TR><TD>面向对象分析与设计<br/>(2012)</TD></TR></TABLE>> URL="https://book.douban.com/subject/11509672/"]
 
         sebegin -> mythicalmanmonth2 -> { sepractice; dp } [arrowhead=normal, style=solid]
         mythicalmanmonth2 -> uml

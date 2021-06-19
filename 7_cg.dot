@@ -34,6 +34,8 @@ digraph {
             cgmisc [label="图形学文选"]
         }
 
+        node [shape="box", style="rounded,filled", color="#c7c7ff", fontname="Helvetica-Light", fontsize=10, penwidth=0.5]
+
         rt3drendering [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/rt3drendering.jpg"/></TD></TR><TR><TD>Real-Time 3D<br/>Rendering with DirectX<br/>and HLSL (2014)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/0321962729/"]
         "3dgpdx12" [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/3dgpdx12.jpg"/></TD></TR><TR><TD>DirectX 9.0 3D游戏开发编程基础<br/>(2007)</TD></TR></TABLE>> URL="https://book.douban.com/subject/2111771/"]
         oglguide9 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/oglguide9.jpg"/></TD></TR><TR><TD>OpenGL编程指南(原书第8版)<br/>(2014)</TD></TR></TABLE>> URL="https://book.douban.com/subject/26220248/"]
@@ -160,3 +162,4 @@ digraph {
         cgtop -> cgbegin [style=invis]
         gpuzen -> cgbottom [style=invis]
     }
+}

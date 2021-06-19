@@ -30,6 +30,8 @@ digraph {
             fluid [label="流体动画/模拟"]
         }
 
+        node [shape="box", style="rounded,filled", color="#c7c7ff", fontname="Helvetica-Light", fontsize=10, penwidth=0.5]
+
         natureofcode [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/natureofcode.jpg"/></TD></TR><TR><TD>代码本色：用编程模拟自然系统<br/>(2014)</TD></TR></TABLE>> URL="https://book.douban.com/subject/26264736/"]
         characteranimation [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/characteranimation.jpg"/></TD></TR><TR><TD>Character Animation<br/>with Direct3D (2011)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1584505702/"]
         rt3dcharacteranimation [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/rt3dcharacteranimation.jpg"/></TD></TR><TR><TD>Real-time 3D<br/>Character Animation<br/>with Visual C++ (2001)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/0240516648/"]
