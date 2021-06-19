@@ -1,0 +1,66 @@
+digraph {
+    compound=true
+    fontname="Futura"
+    fontsize=20
+    margin="0,0"
+    ranksep=0.25
+    nodesep=0.15
+    penwidth=0.5
+    labeljust="left"
+    bgcolor="#666666"
+
+    style="rounded,filled"
+    color="none"
+    fillcolor=""
+    node [fontname="Helvetica-Light", fontsize=10, shape=none, penwidth=0.5]
+    edge [fontname="Helvetica-Light", fontsize=10, arrowhead=vee, arrowsize=0.75]
+
+    edge [style=dotted]
+
+    subgraph cluster_ai {
+        fillcolor="#f9ecf9"
+        label=<<TABLE BORDER="0" CELLPADDING="10"><TR><TD>10. 游戏人工智能（AI）</TD></TR></TABLE>>
+
+        {
+            node [shape="box", style="rounded,filled" color="#edc5ed"]
+            aibegin [label="游戏AI初阶"]
+            aiintermediate [label="中级游戏AI"]
+            aimisc [label="游戏AI文选"]
+        }
+
+        aiforgames2 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/aiforgames2.jpg"/></TD></TR><TR><TD>Artificial Intelligence<br/>for Games 2nd Ed (2009)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/0123747317/"]
+        aiforgd [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/aiforgd.jpg"/></TD></TR><TR><TD>游戏开发中的人工智能<br/>(2006)</TD></TR></TABLE>> URL="https://book.douban.com/subject/1899340/"]
+        proggameaibyexample [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/proggameaibyexample.jpg"/></TD></TR><TR><TD>游戏人工智能编程<br/>案例精粹<br/>(2012)</TD></TR></TABLE>> URL="https://book.douban.com/subject/19930152/"]
+        unityaigp2 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/unityaigp2.jpg"/></TD></TR><TR><TD>Unity人工智能游戏开发(第2版) <br/>(2016)</TD></TR></TABLE>> URL="https://book.douban.com/subject/26911454/"]
+
+        aima3 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/aima3.jpg"/></TD></TR><TR><TD>人工智能<br/>(2004)</TD></TR></TABLE>> URL="https://book.douban.com/subject/1230487/"]
+        behavioralmathforgameai [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/behavioralmathforgameai.jpg"/></TD></TR><TR><TD>Behavioral Mathematics<br/>for Game AI (2009)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1584506849/"]
+
+        {
+            rank=same
+            aigpwisdom [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/aigpwisdom.jpg"/></TD></TR><TR><TD>AI Game Programming<br/>Wisdom (2002)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1584500778/"]
+            aigpwisdom2 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/aigpwisdom2.jpg"/></TD></TR><TR><TD>AI Game Programming<br/>Wisdom 2 (2003)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1584502894/"]
+            aigpwisdom3 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/aigpwisdom3.jpg"/></TD></TR><TR><TD>AI Game Programming<br/>Wisdom 3 (2006)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1584504579/"]
+            aigpwisdom4 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/aigpwisdom4.jpg"/></TD></TR><TR><TD>AI Game Programming<br/>Wisdom 4 (2008)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1584505230/"]
+        }
+        {
+            rank=same
+            gameaipro [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images-zh-cn/gameaipro.jpg"/></TD></TR><TR><TD>游戏人工智能（2017）</TD></TR></TABLE>> URL="https://book.douban.com/subject/27154117/"]
+            gameaipro2 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/gameaipro2.jpg"/></TD></TR><TR><TD>Game AI Pro 2 (2015)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1482254794/"]
+            gameaipro3 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/gameaipro3.jpg"/></TD></TR><TR><TD>Game AI Pro 3 (2017)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1482254794/"]
+        }
+
+        aibegin -> aiforgames2 -> aiintermediate -> aima3 [arrowhead=normal, style=solid]
+        aibegin -> { aiforgd; proggameaibyexample; unityaigp2 } -> aiintermediate
+        aiintermediate -> behavioralmathforgameai -> aimisc
+        aima3 -> aimisc
+        aimisc -> aigpwisdom
+        aigpwisdom -> aigpwisdom2 -> aigpwisdom3 -> aigpwisdom4
+        aigpwisdom4 -> gameaipro -> gameaipro2 -> gameaipro3
+
+        aitop [fixedsize=true,width=8,height=0.01,style=invis,label=""]
+        aibottom [fixedsize=true,width=8,height=0.01,style=invis,label=""]
+        aitop -> aibegin [style=invis]
+        gameaipro3 -> aibottom [style=invis]
+    }
+}

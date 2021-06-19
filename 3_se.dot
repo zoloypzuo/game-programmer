@@ -1,0 +1,65 @@
+digraph {
+    compound=true
+    fontname="Futura"
+    fontsize=20
+    margin="0,0"
+    ranksep=0.25
+    nodesep=0.15
+    penwidth=0.5
+    labeljust="left"
+    bgcolor="#666666"
+
+    style="rounded,filled"
+    color="none"
+    fillcolor=""
+    node [fontname="Helvetica-Light", fontsize=10, shape=none, penwidth=0.5]
+    edge [fontname="Helvetica-Light", fontsize=10, arrowhead=vee, arrowsize=0.75]
+
+    edge [style=dotted]
+
+    subgraph cluster_se {
+        fillcolor="#f8f8ec"
+        label=<<TABLE BORDER="0" CELLPADDING="10"><TR><TD>3. 软件开发</TD></TR></TABLE>>
+
+        {
+            node [shape="box", style="rounded,filled", color="#ebebc6"]
+            sebegin [label="软件开发新手"]
+            sepractice [label="实践"]
+            dp [label="设计模式"]
+            uml [label="UML"]
+        }
+
+        mythicalmanmonth2 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/mythicalmanmonth2.jpg"/></TD></TR><TR><TD>人月神话<br/>(2007)</TD></TR></TABLE>> URL="https://book.douban.com/subject/2230248/"]
+
+        codecomplete2 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/codecomplete2.jpg"/></TD></TR><TR><TD>代码大全<br/>(2007)</TD></TR></TABLE>> URL="https://book.douban.com/subject/2208626/"]
+        apidesignforcpp [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/apidesignforcpp.jpg"/></TD></TR><TR><TD>C++ API设计<br/>(2013)</TD></TR></TABLE>> URL="https://book.douban.com/subject/24869855/"]
+
+        agilesoftwaredev [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/agilesoftwaredev.jpg"/></TD></TR><TR><TD>敏捷软件开发<br/>(2008)</TD></TR></TABLE>> URL="https://book.douban.com/subject/2347790/"]
+        designpatterns [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/designpatterns.jpg"/></TD></TR><TR><TD>设计模式<br/>(2007)</TD></TR></TABLE>> URL="https://book.douban.com/subject/2111801/"]
+        headfirstdesignpatterns [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/headfirstdesignpatterns.jpg"/></TD></TR><TR><TD>Head First 设计模式（中文版）<br/>(2007)</TD></TR></TABLE>> URL="https://book.douban.com/subject/2243615/"]
+        practiceofprogramming [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/practiceofprogramming.jpg"/></TD></TR><TR><TD>程序设计实践<br/>(2011)</TD></TR></TABLE>> URL="https://book.douban.com/subject/6524000/"]
+        cleancode [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/cleancode.jpg"/></TD></TR><TR><TD>编码整洁之道<br/>(2012)</TD></TR></TABLE>> URL="https://book.douban.com/subject/11602008/"]
+        refactoring [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/refactoring.jpg"/></TD></TR><TR><TD>重构<br/>(2010)</TD></TR></TABLE>> URL="https://book.douban.com/subject/4262627/"]
+        workingeffectivelylegacycode [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/workingeffectivelylegacycode.jpg"/></TD></TR><TR><TD>修改代码的艺术<br/>(2014)</TD></TR></TABLE>> URL="https://book.douban.com/subject/25904007/"]
+
+        umldistilled3 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/umldistilled3.jpg"/></TD></TR><TR><TD>UML精粹<br/>(2012)</TD></TR></TABLE>> URL="https://book.douban.com/subject/10798193/"]
+        umluserguide2 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/umluserguide2.jpg"/></TD></TR><TR><TD>UML用户指南<br/>(2006)</TD></TR></TABLE>> URL="https://book.douban.com/subject/1837454/"]
+        ooadwa3 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/ooadwa3.jpg"/></TD></TR><TR><TD>面向对象分析与设计<br/>(2012)</TD></TR></TABLE>> URL="https://book.douban.com/subject/11509672/"]
+
+        sebegin -> mythicalmanmonth2 -> { sepractice; dp } [arrowhead=normal, style=solid]
+        mythicalmanmonth2 -> uml
+
+        sepractice -> practiceofprogramming -> refactoring -> codecomplete2 -> { cleancode; workingeffectivelylegacycode } [arrowhead=normal, style=solid]
+        codecomplete2 -> apidesignforcpp
+
+        dp -> agilesoftwaredev -> designpatterns [arrowhead=normal, style=solid]
+        dp -> headfirstdesignpatterns -> agilesoftwaredev
+
+        uml -> umldistilled3 -> umluserguide2 -> ooadwa3
+
+        setop [fixedsize=true,width=8,height=0.01,style=invis,label=""]
+        sebottom [fixedsize=true,width=8,height=0.01,style=invis,label=""]
+        setop -> sebegin [style=invis]
+        workingeffectivelylegacycode -> sebottom [style=invis]
+    }
+}

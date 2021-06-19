@@ -1,0 +1,162 @@
+digraph {
+    compound=true
+    fontname="Futura"
+    fontsize=20
+    margin="0,0"
+    ranksep=0.25
+    nodesep=0.15
+    penwidth=0.5
+    labeljust="left"
+    bgcolor="#666666"
+
+    style="rounded,filled"
+    color="none"
+    fillcolor=""
+    node [fontname="Helvetica-Light", fontsize=10, shape=none, penwidth=0.5]
+    edge [fontname="Helvetica-Light", fontsize=10, arrowhead=vee, arrowsize=0.75]
+
+    edge [style=dotted]
+
+    subgraph cluster_cg {
+        fillcolor="#ecf5f9"
+        label=<<TABLE BORDER="0" CELLPADDING="10"><TR><TD>7. 计算机图形学（CG）</TD></TR></TABLE>>
+
+        {
+            node [shape="box", style="rounded,filled", color="#c5e1ed"]
+            cgbegin [label="游戏图形学初级"]
+            cgtheory [label="图形学理论初级"]
+            cgadvanced [label="图形学进阶"]
+            realtimerendering [label="实时渲染"]
+            offlinerendering [label="离线渲染"]
+            d3d [label="Direct3D"]
+            ogl [label="OpenGL"]
+            cgtech [label="图形学技术"]
+            cgmisc [label="图形学文选"]
+        }
+
+        rt3drendering [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/rt3drendering.jpg"/></TD></TR><TR><TD>Real-Time 3D<br/>Rendering with DirectX<br/>and HLSL (2014)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/0321962729/"]
+        "3dgpdx12" [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/3dgpdx12.jpg"/></TD></TR><TR><TD>DirectX 9.0 3D游戏开发编程基础<br/>(2007)</TD></TR></TABLE>> URL="https://book.douban.com/subject/2111771/"]
+        oglguide9 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/oglguide9.jpg"/></TD></TR><TR><TD>OpenGL编程指南(原书第8版)<br/>(2014)</TD></TR></TABLE>> URL="https://book.douban.com/subject/26220248/"]
+
+        fundamentalscg4 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/fundamentalscg4.jpg"/></TD></TR><TR><TD>计算机图形学<br/>(2007)</TD></TR></TABLE>> URL="https://book.douban.com/subject/2116178/"]
+        cgpp3 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/cgpp3.jpg"/></TD></TR><TR><TD>计算机图形学原理及实践:<br/>C语言描述(原书第2版)<br/>(2004)</TD></TR></TABLE>> URL="https://book.douban.com/subject/1230412/"]
+        pdis [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/pdis.jpg"/></TD></TR><TR><TD>Principles of Digital<br/>Image Synthesis<br/>(PODIS) (1995)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1558602763/"]
+        digitalimageprocessing3 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/digitalimageprocessing3.jpg"/></TD></TR><TR><TD>数字图像处理<br/>(2010)</TD></TR></TABLE>> URL="https://book.douban.com/subject/4285832/"]
+
+        graphicsshaders2 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/graphicsshaders2.jpg"/></TD></TR><TR><TD>图形着色器<br/>(2013)</TD></TR></TABLE>> URL="https://book.douban.com/subject/23858154/"]
+        glsl3 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/glsl3.jpg"/></TD></TR><TR><TD>OpenGL着色语言<br/>(2006)</TD></TR></TABLE>> URL="https://book.douban.com/subject/1911849/"]
+        oglsuper7 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/oglsuper7.jpg"/></TD></TR><TR><TD>OpenGL Super Bible<br/>7th Ed (2015)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/0672337479/"]
+        ogles3guide2 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/ogles3guide2.jpg"/></TD></TR><TR><TD>OpenGL ES 3.0编程指南<br/>(2015)</TD></TR></TABLE>> URL="https://book.douban.com/subject/26414014/"]
+        oglinsights [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/oglinsights.jpg"/></TD></TR><TR><TD>OpenGL Insights (2012)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1439893764/"]
+        vulkanguide [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/vulkanguide.jpg"/></TD></TR><TR><TD>Vulkan Programming<br/>Guide (2016)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/0134464540/"]
+
+        practiald3d11 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/practiald3d11.jpg"/></TD></TR><TR><TD>Practical Rendering<br/>and Computation<br/>with Direct3D 11 (2011)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1568817207/"]
+
+        rtr3 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/rtr3.jpg"/></TD></TR><TR><TD>实时计算机图形学<br/>(2004)</TD></TR></TABLE>> URL="https://book.douban.com/subject/1231141/"]
+        tricks3dgpgurus [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/tricks3dgpgurus.jpg"/></TD></TR><TR><TD>3D游戏编程大师技巧<br/>(2005)</TD></TR></TABLE>> URL="https://book.douban.com/subject/1321769/"]
+        realtimeshadows [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/realtimeshadows.jpg"/></TD></TR><TR><TD>实时阴影技术<br/>(2013)</TD></TR></TABLE>> URL="https://book.douban.com/subject/25908680/"]
+        rtvolumegraphics [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/rtvolumegraphics.jpg"/></TD></TR><TR><TD>Real-Time Volume<br/>Graphics (2006)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1568812663/"]
+        graphicsprogrammingmethods [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/graphicsprogrammingmethods.jpg"/></TD></TR><TR><TD>Graphics Programming<br/>Methods (2003)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1584502991/"]
+
+        shaderx [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/shaderx.jpg"/></TD></TR><TR><TD>ShaderX (1996)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1556220413/"]
+        shaderx2 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/shaderx2.jpg"/></TD></TR><TR><TD>ShaderX2 (2003)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1556229887/"]
+        shaderx3 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/shaderx3.jpg"/></TD></TR><TR><TD>ShaderX3 (2004)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1584503572/"]
+        shaderx4 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/shaderx4.jpg"/></TD></TR><TR><TD>ShaderX4 (2006)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1584504250/"]
+        shaderx5 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/shaderx5.jpg"/></TD></TR><TR><TD>ShaderX5 (2006)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1584504994/"]
+        shaderx6 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/shaderx6.jpg"/></TD></TR><TR><TD>ShaderX6 (2008)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1584505443/"]
+        shaderx7 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/shaderx7.jpg"/></TD></TR><TR><TD>ShaderX7 (2009)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1584505982/"]
+
+        gpugems [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/gpugems.jpg"/></TD></TR><TR><TD>GPU精粹<br/>(2006)</TD></TR></TABLE>> URL="https://book.douban.com/subject/1480239/"]
+        gpugems2 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/gpugems2.jpg"/></TD></TR><TR><TD>GPU精粹2<br/>(2007)</TD></TR></TABLE>> URL="https://book.douban.com/subject/2144796/"]
+        gpugems3 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/gpugems3.jpg"/></TD></TR><TR><TD>GPU精粹3<br/>(2010)</TD></TR></TABLE>> URL="https://book.douban.com/subject/4851196/"]
+
+        gpupro [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/gpupro.jpg"/></TD></TR><TR><TD>GPU Pro (2010)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1568814720/"]
+        gpupro2 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/gpupro2.jpg"/></TD></TR><TR><TD>GPU Pro 2 (2011)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1568817185/"]
+        gpupro3 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/gpupro3.jpg"/></TD></TR><TR><TD>GPU Pro 3 (2012)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1439887829/"]
+        gpupro4 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/gpupro4.jpg"/></TD></TR><TR><TD>GPU Pro 4 (2013)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1466567430/"]
+        gpupro5 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/gpupro5.jpg"/></TD></TR><TR><TD>GPU Pro 5 (2014)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1482208636/"]
+        gpupro6 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/gpupro6.jpg"/></TD></TR><TR><TD>GPU Pro 6 (2015)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1482264617/"]
+        gpupro7 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/gpupro7.jpg"/></TD></TR><TR><TD>GPU Pro 7 (2016)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/149874253X/"]
+
+        gpuzen [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/gpuzen.jpg"/></TD></TR><TR><TD>GPU Zen (2017)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/0998822892/"]
+
+        pbrt3 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/pbrt3.jpg"/></TD></TR><TR><TD>Physically Based<br/>Rendering (PBRT)<br/>3rd Ed (2016)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/0128006455/"]
+        raytracingfromgroundup [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/raytracingfromgroundup.jpg"/></TD></TR><TR><TD>光线跟踪算法技术<br/>(2011)</TD></TR></TABLE>> URL="https://book.douban.com/subject/6028258/"]
+        advancedgi2 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/advancedgi2.jpg"/></TD></TR><TR><TD>Advanced<br/>Global Illumination<br/>2nd Ed (2006)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1568813074/"]
+        productionvolumerendering [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/productionvolumerendering.jpg"/></TD></TR><TR><TD>Production Volume<br/>Rendering (2012)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/156881724X/"]
+
+        texturingmodeling3 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/texturingmodeling3.jpg"/></TD></TR><TR><TD>Texturing and Modeling<br/>(2002)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1558608486/"]
+        lod [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/lod.jpg"/></TD></TR><TR><TD>Level of Detail<br/>for 3D Graphics (2002)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/0123991811/"]
+        "3denginedesignvirtualglobes" [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/3denginedesignvirtualglobes.jpg"/></TD></TR><TR><TD>3D Engine Design<br/>for Virtual Globes (2011)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1568817118/"]
+        polygonmeshprocessing [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/polygonmeshprocessing.jpg"/></TD></TR><TR><TD>Polygon Mesh<br/>Processing (2010)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1568814267/"]
+        isosurfaces [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/isosurfaces.jpg"/></TD></TR><TR><TD>Isosurfaces (2013)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1466570970/"]
+        npr [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/npr.jpg"/></TD></TR><TR><TD>Non-Photorealistic<br/>Rendering (2001)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1568811330/"]
+        npcg [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/npcg.jpg"/></TD></TR><TR><TD>Non-Photorealistic<br/>Computer Graphics<br/>(2002)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1558607870/"]
+
+        graphicsgems [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/graphicsgems.jpg"/></TD></TR><TR><TD>Graphics Gems (1990)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/0122861655/"]
+        graphicsgems2 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/graphicsgems2.jpg"/></TD></TR><TR><TD>Graphics Gems II (1991)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/0120644819/"]
+        graphicsgems3 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/graphicsgems3.jpg"/></TD></TR><TR><TD>Graphics Gems III (1994)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/0124096735/"]
+        graphicsgems4 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/graphicsgems4.jpg"/></TD></TR><TR><TD>Graphics Gems IV (1994)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/0123361559/"]
+        graphicsgems5 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/graphicsgems5.jpg"/></TD></TR><TR><TD>Graphics Gems V (1995)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/0125434553/"]
+
+        blinn1 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/blinn1.jpg"/></TD></TR><TR><TD>Jim Blinn's Corner:<br/>A Trip Down<br/>the Graphics Pipeline (1997)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1558603875/"]
+        blinn2 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/blinn2.jpg"/></TD></TR><TR><TD>Jim Blinn's Corner:<br/>Dirty Pixels (1998)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1558604553/"]
+        blinn3 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/blinn3.jpg"/></TD></TR><TR><TD>Jim Blinn's Corner:<br/>Notation, Notation,<br/>Notation (2002)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/B01FGPKA62/"]
+
+        glassenernotebook1 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/glassenernotebook1.jpg"/></TD></TR><TR><TD>Andrew Glassner's<br/>Notebook (1999)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1558605983/"]
+        glassenernotebook2 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/glassenernotebook2.jpg"/></TD></TR><TR><TD>Andrew Glassner's<br/>Other Notebook (2002)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1568811713/"]
+
+        magiccg [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/magiccg.jpg"/></TD></TR><TR><TD>The Magic of<br/>Computer Graphics (2011)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1568815778/"]
+
+        cgbegin -> "3dgpdx12"
+        cgbegin -> { rt3drendering; oglguide9 }
+
+        { "3dgpdx12"; rt3drendering; oglguide9 } -> cgtheory
+
+        cgtheory -> fundamentalscg4 [arrowhead=normal, style=solid]
+        cgtheory-> { cgpp3; pdis; digitalimageprocessing3 }
+
+        { fundamentalscg4; cgpp3; pdis; digitalimageprocessing3} -> cgadvanced
+
+        cgadvanced -> { realtimerendering; offlinerendering; cgtech;}
+
+        realtimerendering -> rtr3 [arrowhead=normal, style=solid]
+        realtimerendering -> tricks3dgpgurus
+        rtr3 -> graphicsprogrammingmethods -> shaderx -> shaderx2 -> shaderx3 -> shaderx4 -> shaderx5 -> shaderx6 -> shaderx7 -> gpugems -> gpugems2 -> gpugems3 -> gpupro -> gpupro2 -> gpupro3 -> gpupro4 -> gpupro5 -> gpupro6 -> gpupro7 -> gpuzen
+        { rank=same; rtr3; rtvolumegraphics }
+        { rank=same; gpupro; gpupro2; gpupro3; gpupro4 }
+        { rank=same; gpupro5; gpupro6; gpupro7; gpuzen }
+        rtr3 -> { realtimeshadows; rtvolumegraphics }
+        realtimeshadows -> graphicsprogrammingmethods [style=invis]
+        tricks3dgpgurus -> realtimeshadows [style=invis]
+
+        rtr3 -> { d3d; ogl }
+        d3d -> practiald3d11
+        ogl -> oglsuper7 -> { graphicsshaders2; glsl3 } -> ogles3guide2 -> oglinsights -> vulkanguide
+
+        offlinerendering -> pbrt3 [arrowhead=normal, style=solid]
+        offlinerendering -> raytracingfromgroundup
+        raytracingfromgroundup -> pbrt3 -> advancedgi2 -> productionvolumerendering
+
+        productionvolumerendering -> cgtech [style=invis]
+
+        cgtech -> { cgmisc; texturingmodeling3; lod; npr; }
+        lod -> "3denginedesignvirtualglobes"
+        texturingmodeling3 -> polygonmeshprocessing -> isosurfaces
+        npr -> npcg
+
+        polygonmeshprocessing -> npr [style=invis]
+
+        {
+            rank=same; glassenernotebook2; magiccg
+        }
+        cgmisc -> graphicsgems -> graphicsgems2 -> graphicsgems3 -> graphicsgems4 -> graphicsgems5
+        cgmisc -> blinn1 -> blinn2 -> glassenernotebook1 -> blinn3 -> glassenernotebook2 -> magiccg
+
+        vulkanguide -> cgmisc [style=invis]
+
+        cgtop [fixedsize=true,width=8,height=0.01,style=invis,label=""]
+        cgbottom [fixedsize=true,width=8,height=0.01,style=invis,label=""]
+        cgtop -> cgbegin [style=invis]
+        gpuzen -> cgbottom [style=invis]
+    }

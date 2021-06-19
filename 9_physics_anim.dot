@@ -1,0 +1,78 @@
+digraph {
+    compound=true
+    fontname="Futura"
+    fontsize=20
+    margin="0,0"
+    ranksep=0.25
+    nodesep=0.15
+    penwidth=0.5
+    labeljust="left"
+    bgcolor="#666666"
+
+    style="rounded,filled"
+    color="none"
+    fillcolor=""
+    node [fontname="Helvetica-Light", fontsize=10, shape=none, penwidth=0.5]
+    edge [fontname="Helvetica-Light", fontsize=10, arrowhead=vee, arrowsize=0.75]
+
+    edge [style=dotted]
+
+    subgraph cluster_physics {
+        fillcolor="#f2ecf9"
+        label=<<TABLE BORDER="0" CELLPADDING="10"><TR><TD>9. 游戏物理和动画</TD></TR></TABLE>>
+
+        {
+            node [shape="box", style="rounded,filled",color="#d7c5ed"]
+            animbegin [label="游戏动画初阶"]
+            animadvanced [label="游戏动画进阶"]
+            phybegin [label="游戏物理初阶"]
+            phyadvanced [label="游戏物理进阶"]
+            fluid [label="流体动画/模拟"]
+        }
+
+        natureofcode [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/natureofcode.jpg"/></TD></TR><TR><TD>代码本色：用编程模拟自然系统<br/>(2014)</TD></TR></TABLE>> URL="https://book.douban.com/subject/26264736/"]
+        characteranimation [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/characteranimation.jpg"/></TD></TR><TR><TD>Character Animation<br/>with Direct3D (2011)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1584505702/"]
+        rt3dcharacteranimation [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/rt3dcharacteranimation.jpg"/></TD></TR><TR><TD>Real-time 3D<br/>Character Animation<br/>with Visual C++ (2001)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/0240516648/"]
+        computeranimation3 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/computeranimation3.jpg"/></TD></TR><TR><TD>Computer Animation<br/>3rd Ed (2012)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/0124158420/"]
+        gameik [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/gameik.jpg"/></TD></TR><TR><TD>Game Inverse<br/>Kinematics (2013)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1484922328/"]
+        physicsbasedanimation [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/physicsbasedanimation.jpg"/></TD></TR><TR><TD>Physics Based<br/>Animation (2005)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1584503807/"]
+        rtcameras [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/rtcameras.jpg"/></TD></TR><TR><TD>Real-Time Cameras<br/>(2009)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/0123116341/"]
+
+        physicsforgameprogrammers [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/physicsforgameprogrammers.jpg"/></TD></TR><TR><TD>Physics for Game<br/>Programmers (2003)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/159059472X/"]
+        physicsforgamedevelopers2 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/physicsforgamedevelopers2.jpg"/></TD></TR><TR><TD>游戏开发物理学 第2版<br/>(2015)</TD></TR></TABLE>> URL="https://book.douban.com/subject/26394564/"]
+        physicsmodeling [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/physicsmodeling.jpg"/></TD></TR><TR><TD>Physics Modeling<br/>for Game Programmers (2004)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1592000932/"]
+
+        fpbma [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/fpbma.jpg"/></TD></TR><TR><TD>Foundations of Physically<br/>Based Modeling and<br/>Animation (2017)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1482234602/"]
+        gamephysicsenginedev2 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/gamephysicsenginedev2.jpg"/></TD></TR><TR><TD>游戏物理引擎开发<br/>(2013)</TD></TR></TABLE>> URL="https://book.douban.com/subject/25821830/"]
+        gamephysics2 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/gamephysics2.jpg"/></TD></TR><TR><TD>Game Physics 2nd Ed (2010)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/0123749034/"]
+        collisiondetection3denv [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/collisiondetection3denv.jpg"/></TD></TR><TR><TD>Collision Detection<br/>in Interactive 3D<br/>Environments (2003)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/155860801X/"]
+        rtcollisiondetection [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/rtcollisiondetection.jpg"/></TD></TR><TR><TD>实时碰撞检测算法技术<br/>(2010)</TD></TR></TABLE>> URL="https://book.douban.com/subject/4861957/"]
+        gamephysicspearls [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/gamephysicspearls.jpg"/></TD></TR><TR><TD>Game Physics Pearls<br/>(2010)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1568814747/"]
+
+        fluidenginedev [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/fluidenginedev.jpg"/></TD></TR><TR><TD>Fluid Engine Development (2016)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1498719929/"]
+        taofluidanimation [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/taofluidanimation.jpg"/></TD></TR><TR><TD>The Art of<br/>Fluid Animation (2015)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1498700209/"]
+        fluidsimulationforcg2 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/fluidsimulationforcg2.jpg"/></TD></TR><TR><TD>Fluid Simulation<br/>for Computer Graphics<br/>2nd Ed (2015)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1482232839/"]
+
+        animbegin -> { characteranimation; rt3dcharacteranimation } -> computeranimation3 -> animadvanced
+        animadvanced -> { gameik; physicsbasedanimation; rtcameras}
+        gameik -> rtcameras [style=invis]
+
+        phybegin -> physicsforgameprogrammers
+        phybegin -> physicsforgamedevelopers2
+        physicsforgameprogrammers -> physicsforgamedevelopers2 -> phyadvanced
+        physicsforgameprogrammers -> physicsmodeling -> phyadvanced
+
+        { animbegin; phybegin } -> natureofcode
+
+        phyadvanced -> fpbma -> gamephysicspearls
+        gamephysicspearls -> collisiondetection3denv -> rtcollisiondetection
+        gamephysicspearls -> gamephysicsenginedev2 -> gamephysics2
+
+        { animadvanced; phyadvanced } -> fluid -> fluidenginedev -> taofluidanimation -> fluidsimulationforcg2
+
+        phytop [fixedsize=true,width=8,height=0.01,style=invis,label=""]
+        phybottom [fixedsize=true,width=8,height=0.01,style=invis,label=""]
+        phytop -> { animbegin; phybegin } [style=invis]
+        fluidsimulationforcg2 -> phybottom [style=invis]
+    }
+}

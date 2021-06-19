@@ -1,0 +1,72 @@
+digraph {
+    compound=true
+    fontname="Futura"
+    fontsize=20
+    margin="0,0"
+    ranksep=0.25
+    nodesep=0.15
+    penwidth=0.5
+    labeljust="left"
+    bgcolor="#666666"
+
+    style="rounded,filled"
+    color="none"
+    fillcolor=""
+    node [fontname="Helvetica-Light", fontsize=10, shape=none, penwidth=0.5]
+    edge [fontname="Helvetica-Light", fontsize=10, arrowhead=vee, arrowsize=0.75]
+
+    edge [style=dotted]
+
+    subgraph cluster_engine {
+        fillcolor="#ecf9f5"
+        label=<<TABLE BORDER="0" CELLPADDING="10"><TR><TD>6. 游戏引擎开发</TD></TR></TABLE>>
+
+        {
+            node [shape="box", style="rounded,filled", color="#c5ede1"]
+            gebegin [label="游戏引擎开发新手"]
+            gearticles [label="游戏引擎文选"]
+            gescript [label="脚本引擎"]
+            geoptimization [label="优化"]
+            getool [label="工具开发"]
+        }
+
+        {
+            rank=same
+            gameenginearchitecture2 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/gameenginearchitecture2.jpg"/></TD></TR><TR><TD>游戏引擎架构<br/>(2014)</TD></TR></TABLE>> URL="https://book.douban.com/subject/25815142/"]
+            "3dgameenginearchitecture" [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/3dgameenginearchitecture.jpg"/></TD></TR><TR><TD>3D Game Engine<br/>Architecture<br/>(2004)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/012229064X/"]
+            gameenginedesign2 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/gameenginedesign2.jpg"/></TD></TR><TR><TD>3D Game Engine<br/>Design<br/>2nd Ed (2006)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/0122290631/"]
+        }
+
+        gameenginegems1 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/gameenginegems1.jpg"/></TD></TR><TR><TD>Game Engine<br/>Gems 1 (2010)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/0763778885/"]
+        gameenginegems2 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/gameenginegems2.jpg"/></TD></TR><TR><TD>Game Engine<br/>Gems 2 (2011)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1568814372/"]
+        gameenginegems3 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/gameenginegems3.jpg"/></TD></TR><TR><TD>Game Engine<br/>Gems 3 (2016)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1498755658/"]
+
+        gamescriptingmastery [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/gamescriptingmastery.jpg"/></TD></TR><TR><TD>游戏脚本高级编程<br/>(2006)</TD></TR></TABLE>> URL="https://book.douban.com/subject/1927405/"]
+        languageimplpatterns [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/languageimplpatterns.jpg"/></TD></TR><TR><TD>编程语言实现模式<br/>(2012)</TD></TR></TABLE>> URL="https://book.douban.com/subject/10482195/"]
+        garbagecollectionhandbook [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/garbagecollectionhandbook.jpg"/></TD></TR><TR><TD>垃圾回收算法手册：<br/>自动内存管理的艺术<br/>(2016)</TD></TR></TABLE>> URL="https://book.douban.com/subject/26740958/"]
+
+        unity5gameoptimization [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/unity5gameoptimization.jpg"/></TD></TR><TR><TD>Unity 5 Game<br/>Optimization (2015)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1785884581/"]
+        videogameoptimization [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/videogameoptimization.jpg"/></TD></TR><TR><TD>Video Game<br/>Optimization (2010)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1598634356/"]
+        hackersdelight2 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/hackersdelight2.jpg"/></TD></TR><TR><TD>算法心得：高效算法的奥秘（原书第2版）<br/>(2014)</TD></TR></TABLE>> URL="https://book.douban.com/subject/25837031/"]
+        modernx86assembly [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/modernx86assembly.jpg"/></TD></TR><TR><TD>Modern X86<br/>Assembly Language<br/>Programming (2014)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1484200659/"]
+        gpgpu [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/gpgpu.jpg"/></TD></TR><TR><TD>GPGPU Programming<br/>for Games and Science<br/>(2014)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1466595353/"]
+        vectorgamemathprocessors [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/vectorgamemathprocessors.jpg"/></TD></TR><TR><TD>Vector Games<br/>Math Processors<br/>(2002)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1556229216/"]
+
+        gamedevtools [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/gamedevtools.jpg"/></TD></TR><TR><TD>Game Development<br/>Tools (2011)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1568814321/"]
+        designinguxgamedevtools [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/designinguxgamedevtools.jpg"/></TD></TR><TR><TD>Designing the User<br/>Experience of Game<br/>Development Tools (2015)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/148224019X/"]
+
+        gebegin -> gameenginearchitecture2 [arrowhead=normal, style=solid]
+        gameenginearchitecture2 -> { gearticles; gescript; geoptimization; getool }
+
+        gameenginearchitecture2 -> "3dgameenginearchitecture" -> gameenginedesign2
+        gearticles -> gameenginegems1 -> gameenginegems2 -> gameenginegems3
+        gescript -> gamescriptingmastery -> languageimplpatterns -> garbagecollectionhandbook
+        geoptimization -> videogameoptimization -> unity5gameoptimization -> hackersdelight2 -> { modernx86assembly; gpgpu; vectorgamemathprocessors}
+        getool -> gamedevtools -> designinguxgamedevtools
+
+        getop [fixedsize=true,width=8,height=0.01,style=invis,label=""]
+        gebottom [fixedsize=true,width=8,height=0.01,style=invis,label=""]
+        getop -> gebegin [style=invis]
+        gpgpu -> gebottom [style=invis]
+    }
+}

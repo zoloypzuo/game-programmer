@@ -1,0 +1,39 @@
+digraph {
+    compound=true
+    fontname="Futura"
+    fontsize=20
+    margin="0,0"
+    ranksep=0.25
+    nodesep=0.15
+    penwidth=0.5
+    labeljust="left"
+    bgcolor="#666666"
+
+    style="rounded,filled"
+    color="none"
+    fillcolor=""
+    node [fontname="Helvetica-Light", fontsize=10, shape=none, penwidth=0.5]
+    edge [fontname="Helvetica-Light", fontsize=10, arrowhead=vee, arrowsize=0.75]
+
+    edge [style=dotted]
+
+    subgraph cluster_audio {
+        fillcolor="#eceef9"
+        label=<<TABLE BORDER="0" CELLPADDING="10"><TR><TD>8. 游戏音效</TD></TR></TABLE>>
+
+        {
+            node [shape="box", style="rounded,filled", color="#c5cbed"]
+            audiobegin [label="游戏音频编程"]
+        }
+
+        gameaudioprogramming [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/gameaudioprogramming.jpg"/></TD></TR><TR><TD>Game Audio<br/>Programming (2016)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/149874673X/"]
+        gettingstartedcppaudio [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/gettingstartedcppaudio.jpg"/></TD></TR><TR><TD>Getting Started<br/>with C++ Audio Programming<br/>for Game Development (2013)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1849699097/"]
+
+        audiobegin -> { gameaudioprogramming; gettingstartedcppaudio }
+
+        audiotop [fixedsize=true,width=8,height=0.01,style=invis,label=""]
+        audiobottom [fixedsize=true,width=8,height=0.01,style=invis,label=""]
+        audiotop -> audiobegin [style=invis]
+        { gameaudioprogramming; gettingstartedcppaudio } -> audiobottom [style=invis]
+    }
+}

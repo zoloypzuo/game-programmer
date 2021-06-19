@@ -1,0 +1,58 @@
+digraph {
+    compound=true
+    fontname="Futura"
+    fontsize=20
+    margin="0,0"
+    ranksep=0.25
+    nodesep=0.15
+    penwidth=0.5
+    labeljust="left"
+    bgcolor="#666666"
+
+    style="rounded,filled"
+    color="none"
+    fillcolor=""
+    node [fontname="Helvetica-Light", fontsize=10, shape=none, penwidth=0.5]
+    edge [fontname="Helvetica-Light", fontsize=10, arrowhead=vee, arrowsize=0.75]
+
+    edge [style=dotted]
+
+    subgraph cluster_math {
+        fillcolor="#f2f8ec"
+        label=<<TABLE BORDER="0" CELLPADDING="10"><TR><TD>4. 游戏程序员的数学课</TD></TR></TABLE>>
+
+        {
+            node [shape="box", style="rounded,filled", color="#d9ebc6"]
+            mathbegin [label="游戏编程数学初阶"]
+            mathadvanced [label="游戏编程数学进阶"]
+        }
+
+        foundationsgedmath [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/foundationsgedmath.jpg"/></TD></TR><TR><TD>Foundations of Game<br/>Engine Development,<br/>Vol 1: Mathematics<br/>(2016)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/0985811749/"]
+        math3dcpcg3 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/math3dcpcg3.jpg"/></TD></TR><TR><TD>3D游戏与计算机图形学<br/>中的数学方法(第3版)<br/>(2016)</TD></TR></TABLE>> URL="https://book.douban.com/subject/26864861/"]
+        "3dmathprimer2" [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/3dmathprimer2.jpg"/></TD></TR><TR><TD>3D Math Primer for<br/>Graphics and Game<br/>Development 2nd Ed (2011)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1568817231/"]
+        essentialmaths3 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/essentialmaths3.jpg"/></TD></TR><TR><TD>Essential Mathematics<br/>for Games and<br/>Interactive Applications<br/>3rd Ed (2011)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1482250926/"]
+
+        geometricalgebra [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/geometricalgebra.jpg"/></TD></TR><TR><TD>Geometric Algebra for<br/>Computer Science (2007)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/0123749425/"]
+        geometrictools [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/geometrictools.jpg"/></TD></TR><TR><TD>计算机图形学<br/>几何工具算法详解<br/>(2005)</TD></TR></TABLE>> URL="https://book.douban.com/subject/1224798/"]
+        computationalgeometry [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/computationalgeometry.jpg"/></TD></TR><TR><TD>计算几何<br/>(2009)</TD></TR></TABLE>> URL="https://book.douban.com/subject/3893574/"]
+        visualizingquaternions [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/visualizingquaternions.jpg"/></TD></TR><TR><TD>Visualizing Quaternions<br/>(2006)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/0120884003/"]
+        divgradcurl4 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/divgradcurl4.jpg"/></TD></TR><TR><TD>散度、旋度、梯度释义<br/>(2015)</TD></TR></TABLE>> URL="https://book.douban.com/subject/26688502/"]
+
+        mathbegin -> foundationsgedmath
+        mathbegin -> math3dcpcg3 -> mathadvanced [arrowhead=normal, style=solid]
+        mathbegin -> "3dmathprimer2"
+        mathbegin -> essentialmaths3
+
+        { foundationsgedmath; "3dmathprimer2"; essentialmaths3 } -> mathadvanced
+
+        mathadvanced -> geometrictools -> computationalgeometry [arrowhead=normal, style=solid]
+        mathadvanced -> geometricalgebra
+        mathadvanced -> visualizingquaternions
+        mathadvanced -> divgradcurl4
+
+        mathtop [fixedsize=true,width=8,height=0.01,style=invis,label=""]
+        mathbottom [fixedsize=true,width=8,height=0.01,style=invis,label=""]
+        mathtop -> mathbegin [style=invis]
+        computationalgeometry -> mathbottom [style=invis]
+    }
+}

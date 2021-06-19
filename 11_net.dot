@@ -1,0 +1,66 @@
+digraph {
+    compound=true
+    fontname="Futura"
+    fontsize=20
+    margin="0,0"
+    ranksep=0.25
+    nodesep=0.15
+    penwidth=0.5
+    labeljust="left"
+    bgcolor="#666666"
+
+    style="rounded,filled"
+    color="none"
+    fillcolor=""
+    node [fontname="Helvetica-Light", fontsize=10, shape=none, penwidth=0.5]
+    edge [fontname="Helvetica-Light", fontsize=10, arrowhead=vee, arrowsize=0.75]
+
+    edge [style=dotted]
+
+    subgraph cluster_multiplayer {
+        fillcolor="#f9ebf2"
+        label=<<TABLE BORDER="0" CELLPADDING="10"><TR><TD>11. 多人游戏编程</TD></TR></TABLE>>
+
+        {
+            node [shape="box", style="rounded,filled" color="#edc5d7"]
+            multiplayerbegin [label="多人游戏编程初阶"]
+            multiplayermisc [label="多人游戏编程文选"]
+            serverprog [label="服务器编程"]
+            networkprotocol [label="网络协议"]
+            networkprog [label="网络编程"]
+        }
+
+        multiplayergp [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images-zh-cn/multiplayergp.jpg"/></TD></TR><TR><TD>网络多人游戏架构与编程<br/>(2017)</TD></TR></TABLE>> URL="https://book.douban.com/subject/27135506/"]
+        massivelymultiplayergd [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/massivelymultiplayergd.jpg"/></TD></TR><TR><TD>大型多人在线游戏开发<br/>(2006)</TD></TR></TABLE>> URL="https://book.douban.com/subject/1940567/"]
+        massivelymultiplayergd2 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/massivelymultiplayergd2.jpg"/></TD></TR><TR><TD>Massively Multiplayer<br/>Game Development 2<br/>(2005)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1584503904/"]
+
+        progposixthreads [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/progposixthreads.jpg"/></TD></TR><TR><TD>POSIX多线程程序设计<br/>(2003)</TD></TR></TABLE>> URL="https://book.douban.com/subject/1236825/"]
+        advancedprogunixenv3 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/advancedprogunixenv3.jpg"/></TD></TR><TR><TD>UNIX环境高级编程（第3版）<br/>(2014)</TD></TR></TABLE>> URL="https://book.douban.com/subject/25900403/"]
+        linuxsystemprog2 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/linuxsystemprog2.jpg"/></TD></TR><TR><TD>Linux 系统编程（第二版）<br/>(2014)</TD></TR></TABLE>> URL="https://book.douban.com/subject/25828773/"]
+
+        tcpipillustratedv1_2 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/tcpipillustratedv1_2.jpg"/></TD></TR><TR><TD>TCP/IP详解<br/> 卷1：协议<br/>(2016)</TD></TR></TABLE>> URL="https://book.douban.com/subject/26825411/"]
+        tcpipillustratedv2 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/tcpipillustratedv2.jpg"/></TD></TR><TR><TD>TCP/IP详解<br/> 卷2：实现<br/>(2004)</TD></TR></TABLE>> URL="https://book.douban.com/subject/1087767/"]
+        tcpipillustratedv3 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/tcpipillustratedv3.jpg"/></TD></TR><TR><TD>TCP/IP详解<br/> 卷3：TCP事务协议、<br/>HTTP、NNTP<br/>和UNIX域协议<br/>(2000)</TD></TR></TABLE>> URL="https://book.douban.com/subject/1058634/"]
+
+        unixnetworkprogv1_3 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/unixnetworkprogv1_3.jpg"/></TD></TR><TR><TD>UNIX网络编程<br/> 卷1：套接字联网API（第3版）<br/>(2014)</TD></TR></TABLE>> URL="https://book.douban.com/subject/26434583/"]
+        unixnetworkprogv2_2 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/unixnetworkprogv2_2.jpg"/></TD></TR><TR><TD>UNIX网络编程<br/> 卷2：进程间通信（第2版）<br/>(2015)</TD></TR></TABLE>> URL="https://book.douban.com/subject/26434599/"]
+        linuxnetworkinternals [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/linuxnetworkinternals.jpg"/></TD></TR><TR><TD>深入理解<br/>LINUX网络技术内幕<br/>(2009)</TD></TR></TABLE>> URL="https://book.douban.com/subject/4015134/"]
+
+        multiplayerbegin -> multiplayergp [arrowhead=normal, style=solid]
+        multiplayergp -> serverprog
+        multiplayergp -> networkprotocol
+        multiplayergp -> networkprog
+        multiplayergp -> multiplayermisc
+
+        serverprog -> progposixthreads -> advancedprogunixenv3 -> linuxsystemprog2
+        networkprotocol -> tcpipillustratedv1_2 -> tcpipillustratedv2 -> tcpipillustratedv3
+        networkprog -> unixnetworkprogv1_3 -> unixnetworkprogv2_2 -> linuxnetworkinternals
+
+        multiplayermisc -> massivelymultiplayergd -> massivelymultiplayergd2
+
+        multiplayertop [fixedsize=true,width=8,height=0.01,style=invis,label=""]
+        multiplayerbottom [fixedsize=true,width=8,height=0.01,style=invis,label=""]
+        multiplayertop -> multiplayerbegin [style=invis]
+        { linuxsystemprog2; tcpipillustratedv3; linuxnetworkinternals } -> multiplayerbottom [style=invis]
+    }
+}
