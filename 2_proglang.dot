@@ -1,0 +1,96 @@
+digraph {
+    compound=true
+    fontname="Futura"
+    fontsize=20
+    margin="0,0"
+    ranksep=0.25
+    nodesep=0.15
+    penwidth=0.5
+    labeljust="left"
+    bgcolor="#666666"
+
+    style="rounded,filled"
+    color="none"
+    fillcolor=""
+    node [fontname="Helvetica-Light", fontsize=10, shape=none, penwidth=0.5]
+    edge [fontname="Helvetica-Light", fontsize=10, arrowhead=vee, arrowsize=0.75]
+
+    edge [style=dotted]
+
+    subgraph cluster_proglang {
+        fillcolor="#f9f3ec"
+        label=<<TABLE BORDER="0" CELLPADDING="10"><TR><TD>2. 编程语言</TD></TR></TABLE>>
+
+        {
+            node [shape="box", style="rounded,filled" color="#eddac5"]
+
+            {
+                rank=same
+                cppbegin [label="C++ 新手"]
+                lua [label="Lua"]
+                csharp [label="C#"]
+            }
+
+            cpppractice [label="C++ 实践"]
+            cpplibrary [label="C++ 标准库"]
+            cppadvance [label="C++ 进阶"]
+        }
+
+        cppprimer5 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/cppprimer5.jpg"/></TD></TR><TR><TD>C++ Primer 中文版<br/>（第 5 版）<br/>(2013)</TD></TR></TABLE>> URL="https://book.douban.com/subject/25708312/"]
+//        tcpppl4 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/tcpppl4.jpg"/></TD></TR><TR><TD>C++ 程序设计语言（原书第 4 版）<br/>(2016)</TD></TR></TABLE>> URL="https://book.douban.com/subject/26857943/"]
+        cppstandardlibrary2 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/cppstandardlibrary2.jpg"/></TD></TR><TR><TD>C++标准库（第2版）<br/>(2015)</TD></TR></TABLE>> URL="https://book.douban.com/subject/26419721/"]
+        boostcpplibraries2 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/boostcpplibraries2.jpg"/></TD></TR><TR><TD>The Boost C++<br/>Libraries 2nd Ed (2014)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1937434362/"]
+        cppconcurrencyinaction [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/cppconcurrencyinaction.jpg"/></TD></TR><TR><TD>C++并发编程实战<br/>(2015)</TD></TR></TABLE>> URL="https://book.douban.com/subject/26386925/"]
+
+        effectivestl [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/effectivestl.jpg"/></TD></TR><TR><TD>Effective STL中文版<br/>(2013)</TD></TR></TABLE>> URL="https://book.douban.com/subject/24534868/"]
+
+//        exceptionalcpp [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/exceptionalcpp.jpg"/></TD></TR><TR><TD>Exceptional C++（中文版）<br/>(2012)</TD></TR></TABLE>> URL="https://book.douban.com/subject/10785602/"]
+//        moreexceptionalcpp [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/moreexceptionalcpp.jpg"/></TD></TR><TR><TD>More Exceptional C++<br/>中文版<br/>(2002)</TD></TR></TABLE>> URL="https://book.douban.com/subject/1244943/"]
+//        exceptionalcppstyle [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/exceptionalcppstyle.jpg"/></TD></TR><TR><TD>Exceptional C++ Style<br/>中文版<br/>(2006)</TD></TR></TABLE>> URL="https://book.douban.com/subject/1470842/"]
+//        cppcodingstandard [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/cppcodingstandard.jpg"/></TD></TR><TR><TD>C++编程规范<br/>(2010)</TD></TR></TABLE>> URL="https://book.douban.com/subject/5348095/"]
+
+        effectivecpp3 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/effectivecpp3.jpg"/></TD></TR><TR><TD>Effective C++<br/>(2006)</TD></TR></TABLE>> URL="https://book.douban.com/subject/1842426/"]
+        moreeffectivecpp3 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/moreeffectivecpp3.jpg"/></TD></TR><TR><TD>More Effective C++<br/>（中文版）<br/>(2011)</TD></TR></TABLE>> URL="https://book.douban.com/subject/5908727/"]
+        effectivemoderncpp [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/effectivemoderncpp.jpg"/></TD></TR><TR><TD>Effective Modern<br/>C++ (2014)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1491903996/"]
+        optimizedcpp [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/optimizedcpp.jpg"/></TD></TR><TR><TD>Optimized C++<br/>(2016)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1491922060/"]
+
+        insidecppobjectmodel [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/insidecppobjectmodel.jpg"/></TD></TR><TR><TD>深度探索C++对象模型<br/>(2012)</TD></TR></TABLE>> URL="https://book.douban.com/subject/10427315/"]
+        imperfectcpp [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/imperfectcpp.jpg"/></TD></TR><TR><TD>Imperfect C++中文版<br/>(2006)</TD></TR></TABLE>> URL="https://book.douban.com/subject/1470838/"]
+        cpptemplates [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/cpptemplates.jpg"/></TD></TR><TR><TD>C++ Templates中文版<br/>(2013)</TD></TR></TABLE>> URL="https://book.douban.com/subject/23780707/"]
+        elementsofprogramming [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/elementsofprogramming.jpg"/></TD></TR><TR><TD>编程原本<br/>(2012)</TD></TR></TABLE>> URL="https://book.douban.com/subject/7564093/"]
+        frommathtogeneric [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/frommathtogeneric.jpg"/></TD></TR><TR><TD>From Mathematics<br/>to Generic Programming<br/>(2014)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/0321942043/"]
+        moderncppdesign [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/moderncppdesign.jpg"/></TD></TR><TR><TD>C++设计新思维<br/>(2003)</TD></TR></TABLE>> URL="https://book.douban.com/subject/1103566/"]
+
+        programminginlua4 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/programminginlua4.jpg"/></TD></TR><TR><TD>LUA程序设计(第2版)<br/>(2008)</TD></TR></TABLE>> URL="https://book.douban.com/subject/3076942/"]
+//        luaprogramminggems [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/luaprogramminggems.jpg"/></TD></TR><TR><TD>Lua Programming<br/>Gems (2008)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/8590379841/"]
+
+        csharpindepth3 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/csharpindepth3.jpg"/></TD></TR><TR><TD>深入理解C#（第3版）<br/>(2014)</TD></TR></TABLE>> URL="https://book.douban.com/subject/25843328/"]
+        clrviacsharp4 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/clrviacsharp4.jpg"/></TD></TR><TR><TD>CLR via C#（第4版）<br/>(2015)</TD></TR></TABLE>> URL="https://book.douban.com/subject/26285940/"]
+
+        cppbegin -> cppprimer5 -> cpppractice [arrowhead=normal, style=solid]
+
+        cppprimer5 -> cpplibrary [arrowhead=normal, style=solid]
+
+        cpplibrary -> cppstandardlibrary2 [arrowhead=normal, style=solid]
+        cppstandardlibrary2 -> effectivestl
+        cppstandardlibrary2 -> cppconcurrencyinaction -> boostcpplibraries2
+
+        cpppractice -> effectivecpp3 -> effectivemoderncpp -> cppcodingstandard [arrowhead=normal, style=solid]
+        effectivecpp3 -> moreeffectivecpp3 -> effectivemoderncpp
+        effectivemoderncpp -> optimizedcpp -> cppadvance
+        cpppractice -> exceptionalcpp -> moreexceptionalcpp -> exceptionalcppstyle -> cppcodingstandard -> cppadvance
+        cppadvance -> elementsofprogramming -> frommathtogeneric
+        cppadvance -> { insidecppobjectmodel; cpptemplates }
+        insidecppobjectmodel -> imperfectcpp
+        cpptemplates -> moderncppdesign
+
+        lua -> programminginlua4 // -> luaprogramminggems
+
+        csharp -> csharpindepth3 -> clrviacsharp4
+
+        progtop [fixedsize=true,width=8,height=0.01,style=invis,label=""]
+        progbottom [fixedsize=true,width=8,height=0.01,style=invis,label=""]
+        progtop -> { cbegin; csharp; lua } [style=invis]
+        moderncppdesign -> progbottom [style=invis]
+    }
+}
