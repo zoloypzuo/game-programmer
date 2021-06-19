@@ -25,97 +25,14 @@ digraph {
 
             toctop [fixedsize=true,width=8, height=3, shape=plaintext,label=<
                 <TABLE BORDER="0">
-<TR><TD><FONT FACE="Futura" POINT-SIZE="40">游戏程序员的</FONT></TD></TR><TR><TD><FONT FACE="Futura" POINT-SIZE="40">学习之路</FONT></TD></TR>                <TR><TD><FONT FACE="Futura" POINT-SIZE="20">Milo Yip<br/>2017/8/7</FONT></TD></TR>
-                <TR><TD>https://github.com/miloyip/game-programmer</TD></TR>
+<TR><TD><FONT FACE="Futura" POINT-SIZE="40">游戏程序员的</FONT></TD></TR><TR><TD><FONT FACE="Futura" POINT-SIZE="40">学习之路</FONT></TD></TR>
                 </TABLE>
             > URL="https://github.com/miloyip/game-programmer"]
             tocbottom [fixedsize=true,width=8,height=0.01,style=invis,label=""]
         }
-
-        {
-            node [shape="box", style="rounded,filled", fixedsize=true, width=3, height=0.5, fontname="Futura", fontsize=10]
-
-            kid         [color="#edc5ce", label=< 0. 编程学前班>]
-            cs          [color="#edc5c5", label=" 1. 计算机科学"]
-            proglang    [color="#eddac5", label=" 2. 编程语言"]
-            softwaredev [color="#ebebc6", label=" 3. 软件开发"]
-            math        [color="#d9ebc6", label=< 4. 游戏程序员的数学课>]
-            gameprog    [color="#c5edc5", label=" 5. 游戏编程"]
-            gameengine  [color="#c5ede1", label=< 6. 游戏引擎开发>]
-            cg          [color="#c5e1ed", label=" 7. 计算机图形学（CG）"]
-            audio       [color="#c5cbed", label=" 8. 游戏音效"]
-            phyanim     [color="#d7c5ed", label=< 9. 游戏物理和动画>]
-            ai          [color="#edc5ed", label=< 10. 游戏人工智能（AI）>]
-            multiplayer [color="#edc5d7", label=< 11. 多人游戏编程>]
-        }
-        kid -> cs -> proglang -> softwaredev -> math -> gameprog -> gameengine
-        gameengine -> cg -> audio -> phyanim -> ai -> multiplayer[style=invis]
-        gameengine -> { cg; phyanim; ai; audio; multiplayer} [tailport=e, headport=e, constraint=false]
-
-        toctop -> kid [style=invis]
-        multiplayer -> tocbottom [style=invis]
     }
 
     edge [style=dotted]
-
-    subgraph cluster_legend {
-        fillcolor="#dddddd"
-        label=<<TABLE BORDER="0" CELLPADDING="10"><TR><TD>Legends</TD></TR></TABLE>>
-        node [shape=none, fixedsize=true, width=2, height=0.25]
-
-        legendA1 [label="推荐路线"]
-        legendB1 [label="可选路线"]
-        legendA2 [label="", height=0.01]
-        legendB2 [label="", height=0.01]
-        legendA1 -> legendA2 [minlen=2,arrowhead=normal, style=solid]
-        legendB1 -> legendB2 [minlen=2]
-
-        legendtop [fixedsize=true,width=8,height=0.01,style=invis,label=""]
-        legendbottom [fixedsize=true,width=8,height=0.01,style=invis,label=""]
-        legendtop -> { legendA1; legendB1 } [style=invis]
-        { legendA2; legendB2 } -> legendbottom [style=invis]
-    }
-
-    subgraph cluster_kid {
-        fillcolor="#f9ecef"
-        label=<<TABLE BORDER="0" CELLPADDING="10"><TR><TD>0. 编程学前班</TD></TR></TABLE>>
-
-        {
-            node [shape="box", style="rounded,filled" color="#edc5ce"]
-            {
-                rank=same
-                age5 [label="从5岁开始"]
-                age8 [label="从8岁开始"]
-            }
-            kidintermediate [label="中级孩童游戏编程"]
-        }
-
-        scratchjr [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images-zh-cn/scratchjr.jpg"/></TD></TR><TR><TD>动手玩转ScratchJr编程 (2016)</TD></TR></TABLE>> URL="https://book.douban.com/subject/26906848/"]
-        
-        codinggamesinscratch [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/codinggamesinscratch.jpg"/></TD></TR><TR><TD>Coding Games<br/>in Scratch<br/>(2015)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1465439358/"]
-        superscratchprogadv [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images-zh-cn/superscratchprogadv.jpg"/></TD></TR><TR><TD>Scratch超人漫游记 (2017)</TD></TR></TABLE>> URL="https://book.douban.com/subject/27072003/"]
-        learntoprogramwithscratch [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images-zh-cn/learntoprogramwithscratch.jpg"/></TD></TR><TR><TD>动手玩转Scratch2.0编程 (2015)</TD></TR></TABLE>> URL="https://book.douban.com/subject/26658602/"]
-        helpyoukidswithcomputercoding [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/helpyoukidswithcomputercoding.jpg"/></TD></TR><TR><TD>Help Your Kids<br/>with Computer Coding<br/>(2015)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/146541956X/"]
-        
-        inventgamepython4 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/inventgamepython4.jpg"/></TD></TR><TR><TD>Invent Your Own<br/>Computer Games with<br/>Python 4th Ed (2016)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1593277954/"]
-        makinggamespython [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/makinggamespython.jpg"/></TD></TR><TR><TD>Making Games with<br/>Python &amp; Pygame (2012)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1469901730/"]
-        learntoprogramwithminecraft [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/learntoprogramwithminecraft.jpg"/></TD></TR><TR><TD>Learn to Program<br/>with Minecraft (2015)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1593276702/"]
-        adventuresinminecraft [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images-zh-cn/adventuresinminecraft.jpg"/></TD></TR><TR><TD>零基础学Minecraft编程<br/>(2015)</TD></TR></TABLE>> URL="https://book.douban.com/subject/26613247/"]
-        "3dgpforkids" [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/3dgpforkids.jpg"/></TD></TR><TR><TD>3D Game Programming<br/>for Kids (2013)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1937785440/"]
-
-        age5 -> scratchjr -> age8
-        age8 -> codinggamesinscratch -> helpyoukidswithcomputercoding -> kidintermediate [arrowhead=normal, style=solid]
-        age8 -> superscratchprogadv -> learntoprogramwithscratch -> kidintermediate
-
-        kidintermediate -> inventgamepython4 -> makinggamespython
-        kidintermediate -> learntoprogramwithminecraft -> adventuresinminecraft
-        kidintermediate -> "3dgpforkids"
-
-        kidtop [fixedsize=true,width=8,height=0.01,style=invis, label=""]
-        kidbottom [fixedsize=true,width=8,height=0.01,style=invis,label=""]
-        kidtop -> {age5; age8} [style=invis]
-        adventuresinminecraft -> kidbottom [style=invis]
-    }
 
     subgraph cluster_cs {
         fillcolor="#f9ecec"
