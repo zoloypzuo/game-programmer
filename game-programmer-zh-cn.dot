@@ -701,17 +701,9 @@ digraph {
         { linuxsystemprog2; tcpipillustratedv3; linuxnetworkinternals } -> multiplayerbottom [style=invis]
     }
 
-    ccsa [fontcolor=white,fontsize=8,label=<<TABLE BORDER="0">
-        <TR><TD><IMG SCALE="TRUE" SRC="images/CC-BY-SA_icon.png"/></TD></TR>
-        <TR><TD>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</TD></TR>
-        </TABLE>>
-        URL = "https://creativecommons.org/licenses/by-sa/4.0/"]
-
     {
         edge [style=invis]
-        tocbottom -> legendtop
-        legendbottom -> kidtop
-        kidbottom -> cstop
+        tocbottom -> cstop
         csbottom -> progtop
         progbottom -> setop
         sebottom -> mathtop
@@ -722,6 +714,5 @@ digraph {
         audiobottom -> phytop
         phybottom -> aitop
         aibottom -> multiplayertop
-        multiplayerbottom -> ccsa
     }
 }
