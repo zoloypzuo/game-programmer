@@ -26,7 +26,7 @@ digraph {
             rank=same
             foundation [label="计算机基础"]
             algorithm [label="算法"]
-            csmath [label="计算机数学"]
+//            csmath [label="计算机数学"]
         }
 
         sicp2 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/sicp2.jpg"/></TD></TR><TR><TD>计算机程序的构造和解释<br/>(2004)</TD></TR></TABLE>> URL="https://book.douban.com/subject/1148282/"]
@@ -34,20 +34,24 @@ digraph {
         caaqa5 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/caaqa5.jpg"/></TD></TR><TR><TD>计算机体系结构<br/>(2012)</TD></TR></TABLE>> URL="https://book.douban.com/subject/20452387/"]
         mos4 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/mos4.jpg"/></TD></TR><TR><TD>现代操作系统（第3版）<br/>(2009)</TD></TR></TABLE>> URL="https://book.douban.com/subject/3852290/"]
         
-        clrs3 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/clrs3.jpg"/></TD></TR><TR><TD>算法导论（原书第3版）<br/>(2012)</TD></TR></TABLE>> URL="https://book.douban.com/subject/20432061/"]
+//        clrs3 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/clrs3.jpg"/></TD></TR><TR><TD>算法导论（原书第3版）<br/>(2012)</TD></TR></TABLE>> URL="https://book.douban.com/subject/20432061/"]
         algorithms4 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/algorithms4.jpg"/></TD></TR><TR><TD>算法（第4版）<br/>(2012)</TD></TR></TABLE>> URL="https://book.douban.com/subject/19952400/"]
         
-        concretemaths2 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/concretemaths2.jpg"/></TD></TR><TR><TD>具体数学<br/>(2013)</TD></TR></TABLE>> URL="https://book.douban.com/subject/21323941/"]
-        computationalscieng [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/computationalscieng.jpg"/></TD></TR><TR><TD>Computational Science<br/>and Engineering (2007)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/0961408812/"]
+//        concretemaths2 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/concretemaths2.jpg"/></TD></TR><TR><TD>具体数学<br/>(2013)</TD></TR></TABLE>> URL="https://book.douban.com/subject/21323941/"]
+//        computationalscieng [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/computationalscieng.jpg"/></TD></TR><TR><TD>Computational Science<br/>and Engineering (2007)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/0961408812/"]
 
         foundation -> { sicp2; csapp3 } -> { caaqa5; mos4 } [arrowhead=normal, style=solid]
-        algorithm -> clrs3 [arrowhead=normal, style=solid]
-        algorithm -> algorithms4 -> clrs3
-        csmath -> concretemaths2 -> computationalscieng
+//        algorithm -> clrs3 [arrowhead=normal, style=solid]
+        algorithm -> algorithms4 //-> clrs3
+//        csmath -> concretemaths2 -> computationalscieng
 
         cstop [fixedsize=true,width=8,height=0.01,style=invis, label=""]
         csbottom [fixedsize=true,width=8,height=0.01,style=invis,label=""]
-        cstop -> { foundation; csmath; algorithm } [style=invis]
+        cstop -> {
+          foundation;
+//          csmath;
+          algorithm
+        } [style=invis]
         caaqa5 -> csbottom [style=invis]
     }
 
@@ -60,18 +64,15 @@ digraph {
 
             {
                 rank=same
-                cbegin [label="C"]
+                cppbegin [label="C++ 新手"]
                 lua [label="Lua"]
                 csharp [label="C#"]
             }
 
-            cppbegin [label="C++ 新手"]
             cpppractice [label="C++ 实践"]
             cpplibrary [label="C++ 标准库"]
             cppadvance [label="C++ 进阶"]
         }
-
-        tcpl2 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/tcpl2.jpg"/></TD></TR><TR><TD>C程序设计语言<br/>(2004)</TD></TR></TABLE>> URL="https://book.douban.com/subject/1139336/"]
 
         cppprimer5 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/cppprimer5.jpg"/></TD></TR><TR><TD>C++ Primer 中文版<br/>（第 5 版）<br/>(2013)</TD></TR></TABLE>> URL="https://book.douban.com/subject/25708312/"]
         tcpppl4 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/tcpppl4.jpg"/></TD></TR><TR><TD>C++ 程序设计语言（原书第 4 版）<br/>(2016)</TD></TR></TABLE>> URL="https://book.douban.com/subject/26857943/"]
@@ -99,13 +100,10 @@ digraph {
         moderncppdesign [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/moderncppdesign.jpg"/></TD></TR><TR><TD>C++设计新思维<br/>(2003)</TD></TR></TABLE>> URL="https://book.douban.com/subject/1103566/"]
 
         programminginlua4 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/programminginlua4.jpg"/></TD></TR><TR><TD>LUA程序设计(第2版)<br/>(2008)</TD></TR></TABLE>> URL="https://book.douban.com/subject/3076942/"]
-        luaprogramminggems [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/luaprogramminggems.jpg"/></TD></TR><TR><TD>Lua Programming<br/>Gems (2008)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/8590379841/"]
+//        luaprogramminggems [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/luaprogramminggems.jpg"/></TD></TR><TR><TD>Lua Programming<br/>Gems (2008)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/8590379841/"]
 
-        mvcsharpstepbystep8 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/mvcsharpstepbystep8.jpg"/></TD></TR><TR><TD>Visual C#从入门到精通(第8版) <br/>(2016)</TD></TR></TABLE>> URL="https://book.douban.com/subject/26937762/"]
         csharpindepth3 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/csharpindepth3.jpg"/></TD></TR><TR><TD>深入理解C#（第3版）<br/>(2014)</TD></TR></TABLE>> URL="https://book.douban.com/subject/25843328/"]
         clrviacsharp4 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/clrviacsharp4.jpg"/></TD></TR><TR><TD>CLR via C#（第4版）<br/>(2015)</TD></TR></TABLE>> URL="https://book.douban.com/subject/26285940/"]
-
-        cbegin -> tcpl2 -> cppbegin [arrowhead=normal, style=solid]
 
         cppbegin -> cppprimer5 -> cpppractice [arrowhead=normal, style=solid]
 
@@ -126,9 +124,9 @@ digraph {
         insidecppobjectmodel -> imperfectcpp
         cpptemplates -> moderncppdesign
 
-        lua -> programminginlua4 -> luaprogramminggems
+        lua -> programminginlua4 // -> luaprogramminggems
 
-        csharp -> mvcsharpstepbystep8 -> csharpindepth3 -> clrviacsharp4
+        csharp -> csharpindepth3 -> clrviacsharp4
 
         progtop [fixedsize=true,width=8,height=0.01,style=invis,label=""]
         progbottom [fixedsize=true,width=8,height=0.01,style=invis,label=""]
