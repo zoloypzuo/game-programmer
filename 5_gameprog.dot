@@ -24,91 +24,63 @@ digraph {
         {
             node [shape="box", style="rounded,filled", color="#c5edc5"]
             gpbegin [label="开始游戏编程"]
-            scratch [label="使用Windows/DirectX"]
             unity [label="使用Unity"]
             unreal [label="使用Unreal"]
-            cocos2dx [label="使用Cocos2d-X"]
             gpintermediate [label="中级游戏编程"]
             gpmisc [label="游戏编程文选"]
         }
 
-        node [shape="box", style="rounded,filled", color="#c7c7ff", fontname="Helvetica-Light", fontsize=10, penwidth=0.5]
-
-        windowsgp2 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/windowsgp2.jpg"/></TD></TR><TR><TD>Windows游戏编程大师技巧<br/>(2012)</TD></TR></TABLE>> URL="https://book.douban.com/subject/20282993/"]
-        gamecodingcomplete4 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/gamecodingcomplete4.jpg"/></TD></TR><TR><TD>游戏编程权威指南<br/>(2016)</TD></TR></TABLE>> URL="https://book.douban.com/subject/26787109/"]
-
         introtogdprodev [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/introtogdprodev.jpg"/></TD></TR><TR><TD>Introduction to Game<br/>Design, Prototyping,<br/>and Development (2014)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/0321933168/"]
         unityinaction [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/unityinaction.jpg"/></TD></TR><TR><TD>Unity5实战<br/>(2016)</TD></TR></TABLE>> URL="https://book.douban.com/subject/26877872/"]
 
-        learninguegd [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/learninguegd.jpg"/></TD></TR><TR><TD>Learning Unreal Engine<br/>Game Development<br/>(2015)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1784398152/"]
-        blueprintsvisualscripting [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/blueprintsvisualscripting.jpg"/></TD></TR><TR><TD>Blueprints Visual Scripting<br/>for Unreal Engine (2015)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1785286013/"]
+        {
+            node [shape="box", style="rounded,filled", color="#c7c7ff", fontname="Helvetica-Light", fontsize=10, penwidth=0.5]
 
-        cocos2dxbyexample2 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/cocos2dxbyexample2.jpg"/></TD></TR><TR><TD>Cocos2d-X<br/>by Example (2015)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1785288857/"]
+            learninguegd [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/learninguegd.jpg"/></TD></TR><TR><TD>Learning Unreal Engine<br/>Game Development<br/>(2015)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1784398152/"]
+            blueprintsvisualscripting [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/blueprintsvisualscripting.jpg"/></TD></TR><TR><TD>Blueprints Visual Scripting<br/>for Unreal Engine (2015)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1785286013/"]
+        }
+
 
         gpalgorithmstechniques [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/gpalgorithmstechniques.jpg"/></TD></TR><TR><TD>游戏编程算法与技巧<br/>(2016)</TD></TR></TABLE>> URL="https://book.douban.com/subject/26906838/"]
         gameprogrammingpatterns [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/gameprogrammingpatterns.jpg"/></TD></TR><TR><TD>游戏编程模式<br/>(2016)</TD></TR></TABLE>> URL="https://book.douban.com/subject/26880704/"]
-        gpgoldenrules [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/gpgoldenrules.jpg"/></TD></TR><TR><TD>Game Programming<br/>Golden Rules (2004)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1584503068/"]
-        crossplatformgp [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/crossplatformgp.jpg"/></TD></TR><TR><TD>Cross-Platform Game<br/>Programming (2005)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1584503793/"]
-        androidndkgdcookbook [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/androidndkgdcookbook.jpg"/></TD></TR><TR><TD>Android NDK Game<br/>Development Cookbook<br/>(2013)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1782167781/"]
-        buildingfpsgameunity [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/buildingfpsgameunity.jpg"/></TD></TR><TR><TD>Building an FPS<br/>Game with Unity (2015)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/178217480X/"]
-        unityvrprojects [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/unityvrprojects.jpg"/></TD></TR><TR><TD>Unity Virtual<br/>Reality Projects (2015)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/178398855X/"]
-        agumentedreality [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/agumentedreality.jpg"/></TD></TR><TR><TD>Augmented Reality<br/>(2016)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/0321883578/"]
-        practicalaugmentedreality [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/practicalaugmentedreality.jpg"/></TD></TR><TR><TD>Practical Augmented<br/>Reality (2016)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/0134094239/"]
 
         {
+            node [shape="box", style="rounded,filled", color="#c7c7ff", fontname="Helvetica-Light", fontsize=10, penwidth=0.5]
+
+            gpgoldenrules [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/gpgoldenrules.jpg"/></TD></TR><TR><TD>Game Programming<br/>Golden Rules (2004)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1584503068/"]
+            crossplatformgp [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/crossplatformgp.jpg"/></TD></TR><TR><TD>Cross-Platform Game<br/>Programming (2005)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1584503793/"]
+            androidndkgdcookbook [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/androidndkgdcookbook.jpg"/></TD></TR><TR><TD>Android NDK Game<br/>Development Cookbook<br/>(2013)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1782167781/"]
+            buildingfpsgameunity [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/buildingfpsgameunity.jpg"/></TD></TR><TR><TD>Building an FPS<br/>Game with Unity (2015)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/178217480X/"]
+        }
+        {
+            node [shape="box", style="rounded,filled", color="#c7c7ff", fontname="Helvetica-Light", fontsize=10, penwidth=0.5]
+
             rank=same
             gpgemsbest [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/gpgemsbest.jpg"/></TD></TR><TR><TD>Best of Game<br/>Programming<br/>Gems (2008)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1584505710/"]
             beginninggp [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/beginninggp.jpg"/></TD></TR><TR><TD>Beginning Game<br/>Programming (2009)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/159863805X/"]
             advancedgp [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/advancedgp.jpg"/></TD></TR><TR><TD>Advanced Game<br/>Programming (2009)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1598638068/"]
         }
 
-        {
-            rank=same
-            gpgems [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/gpgems.jpg"/></TD></TR><TR><TD>游戏编程精粹 1<br/>(2004)</TD></TR></TABLE>> URL="https://book.douban.com/subject/1231195/"]
-            gpgems2 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/gpgems2.jpg"/></TD></TR><TR><TD>游戏编程精粹2<br/>(2003)</TD></TR></TABLE>> URL="https://book.douban.com/subject/1146281/"]
-            gpgems3 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/gpgems3.jpg"/></TD></TR><TR><TD>游戏编程精粹3<br/>(2003)</TD></TR></TABLE>> URL="https://book.douban.com/subject/1125738/"]
-            gpgems4 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/gpgems4.jpg"/></TD></TR><TR><TD>游戏编程精粹4<br/>(2005)</TD></TR></TABLE>> URL="https://book.douban.com/subject/1435923/"]
-        }
-        {
-            rank=same
-            gpgems5 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/gpgems5.jpg"/></TD></TR><TR><TD>游戏编程精粹5<br/>(2007)</TD></TR></TABLE>> URL="https://book.douban.com/subject/2248414/"]
-            gpgems6 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/gpgems6.jpg"/></TD></TR><TR><TD>游戏编程精粹6<br/>(2007)</TD></TR></TABLE>> URL="https://book.douban.com/subject/2305250/"]
-            gpgems7 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/gpgems7.jpg"/></TD></TR><TR><TD>游戏编程精粹7<br/>(2010)</TD></TR></TABLE>> URL="https://book.douban.com/subject/4903976/"]
-            gpgems8 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/gpgems8.jpg"/></TD></TR><TR><TD>Game Programming<br/>Gems (2010)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1584507020/"]
-        }
-
-        gpbegin -> { scratch; unity; unreal; cocos2dx }
-        scratch -> gamecodingcomplete4 [arrowhead=normal, style=solid, tailport=se]
-        gamecodingcomplete4 -> gpintermediate [arrowhead=normal, style=solid]
-        scratch -> windowsgp2
-
-        windowsgp2 -> gamecodingcomplete4[style=invis]
+        gpbegin -> { unity; unreal }
 
         unity -> introtogdprodev -> unityinaction -> gpintermediate
 
         unreal -> learninguegd -> blueprintsvisualscripting -> gpintermediate
 
-        cocos2dx -> cocos2dxbyexample2 -> gpintermediate
-
         gpintermediate -> gpalgorithmstechniques -> gameprogrammingpatterns [arrowhead=normal, style=solid]
         gameprogrammingpatterns -> gpgoldenrules -> gpmisc
         gpintermediate -> crossplatformgp -> androidndkgdcookbook
-        gpintermediate -> buildingfpsgameunity -> unityvrprojects
-        gpintermediate -> agumentedreality -> practicalaugmentedreality
+        gpintermediate -> buildingfpsgameunity
 
         {
             rank=same; gpgoldenrules; gpmisc
         }
         gpmisc -> gpgemsbest
-        gpgemsbest -> gpgems
         gpmisc -> beginninggp -> advancedgp
-        gpgems -> gpgems2 -> gpgems3 -> gpgems4
-        gpgems4 -> gpgems5
-        gpgems5 -> gpgems6 -> gpgems7 -> gpgems8
 
         gametop [fixedsize=true,width=8,height=0.01,style=invis,label=""]
         gamebottom [fixedsize=true,width=8,height=0.01,style=invis,label=""]
         gametop -> { gpbegin; unity } [style=invis]
-        gpgems7 -> gamebottom [style=invis]
+        gpgemsbest -> gamebottom [style=invis]
     }
 }
