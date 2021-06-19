@@ -15,23 +15,6 @@ digraph {
     node [fontname="Helvetica-Light", fontsize=10, shape=none, penwidth=0.5]
     edge [fontname="Helvetica-Light", fontsize=10, arrowhead=vee, arrowsize=0.75]
 
-    subgraph cluster_toc {
-        style=invis;
-
-        edge [color="#cccccc"]
-
-        {
-            node [fontcolor=white]
-
-            toctop [fixedsize=true,width=8, height=3, shape=plaintext,label=<
-                <TABLE BORDER="0">
-<TR><TD><FONT FACE="Futura" POINT-SIZE="40">游戏程序员的</FONT></TD></TR><TR><TD><FONT FACE="Futura" POINT-SIZE="40">学习之路</FONT></TD></TR>
-                </TABLE>
-            > URL="https://github.com/miloyip/game-programmer"]
-            tocbottom [fixedsize=true,width=8,height=0.01,style=invis,label=""]
-        }
-    }
-
     edge [style=dotted]
 
     subgraph cluster_cs {
@@ -703,7 +686,6 @@ digraph {
 
     {
         edge [style=invis]
-        tocbottom -> cstop
         csbottom -> progtop
         progbottom -> setop
         sebottom -> mathtop
