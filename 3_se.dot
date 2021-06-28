@@ -29,12 +29,14 @@ digraph {
 
         mythicalmanmonth2 [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/mythicalmanmonth2.jpg"/></TD></TR><TR><TD>人月神话<br/>(2007)</TD></TR></TABLE>> URL="https://book.douban.com/subject/2230248/"]
 
-        node [shape="box", style="rounded,filled", color="#c7c7ff", fontname="Helvetica-Light", fontsize=10, penwidth=0.5]
+        {
+            node [shape="box", style="rounded,filled", color="#c7c7ff", fontname="Helvetica-Light", fontsize=10, penwidth=0.5]
+            refactoring [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/refactoring.jpg"/></TD></TR><TR><TD>重构<br/>(2010)</TD></TR></TABLE>> URL="https://book.douban.com/subject/4262627/"]
+        }
 
         apidesignforcpp [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/apidesignforcpp.jpg"/></TD></TR><TR><TD>C++ API设计<br/>(2013)</TD></TR></TABLE>> URL="https://book.douban.com/subject/24869855/"]
 
         cleancode [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/cleancode.jpg"/></TD></TR><TR><TD>编码整洁之道<br/>(2012)</TD></TR></TABLE>> URL="https://book.douban.com/subject/11602008/"]
-        refactoring [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/refactoring.jpg"/></TD></TR><TR><TD>重构<br/>(2010)</TD></TR></TABLE>> URL="https://book.douban.com/subject/4262627/"]
         workingeffectivelylegacycode [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/workingeffectivelylegacycode.jpg"/></TD></TR><TR><TD>修改代码的艺术<br/>(2014)</TD></TR></TABLE>> URL="https://book.douban.com/subject/25904007/"]
 
         sebegin -> mythicalmanmonth2 -> { sepractice } [arrowhead=normal, style=solid]
