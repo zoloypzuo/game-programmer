@@ -6,7 +6,9 @@
 
 ## 相关连接
 
-[游戏程序员的学习之路  // pdf下载](http://wiki.cgt3d.cn/mediawiki/index.php/%E6%B8%B8%E6%88%8F%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF)
+[](http://wiki.cgt3d.cn/mediawiki/index.php/%E6%B8%B8%E6%88%8F%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF)
+
+[](https://github.com/kurong00/GameProgramBooks)
 
 ## 构建
 
