@@ -16,6 +16,10 @@
 
 构建：`make`
 
+### 在Windows上构建的问题
+
+试了一下，主要是不稳定，缺字体，懒得维护了
+
 ## 开发指南
 
 工具：Pycharm Remote Deployment
