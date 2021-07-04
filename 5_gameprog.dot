@@ -58,8 +58,6 @@ digraph {
 
             rank=same
             gpgemsbest [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/gpgemsbest.jpg"/></TD></TR><TR><TD>Best of Game<br/>Programming<br/>Gems (2008)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1584505710/"]
-            beginninggp [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/beginninggp.jpg"/></TD></TR><TR><TD>Beginning Game<br/>Programming (2009)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/159863805X/"]
-            advancedgp [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/advancedgp.jpg"/></TD></TR><TR><TD>Advanced Game<br/>Programming (2009)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1598638068/"]
         }
 
         gpbegin -> { unity; unreal }
@@ -77,7 +75,6 @@ digraph {
             rank=same; gameprogrammingpatterns; gpmisc
         }
         gpmisc -> gpgemsbest
-        gpmisc -> beginninggp -> advancedgp
 
         gametop [fixedsize=true,width=8,height=0.01,style=invis,label=""]
         gamebottom [fixedsize=true,width=8,height=0.01,style=invis,label=""]
