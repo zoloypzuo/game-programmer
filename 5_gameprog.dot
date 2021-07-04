@@ -27,7 +27,6 @@ digraph {
             unity [label="使用Unity"]
             unreal [label="使用Unreal"]
             gpintermediate [label="中级游戏编程"]
-            gpmisc [label="游戏编程文选"]
         }
 
         introtogdprodev [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/introtogdprodev.jpg"/></TD></TR><TR><TD>Introduction to Game<br/>Design, Prototyping,<br/>and Development (2014)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/0321933168/"]
