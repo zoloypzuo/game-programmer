@@ -44,21 +44,7 @@ digraph {
         gpalgorithmstechniques [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/gpalgorithmstechniques.jpg"/></TD></TR><TR><TD>游戏编程算法与技巧<br/>(2016)</TD></TR></TABLE>> URL="https://book.douban.com/subject/26906838/"]
         gameprogrammingpatterns [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="./images-zh-cn/gameprogrammingpatterns.jpg"/></TD></TR><TR><TD>游戏编程模式<br/>(2016)</TD></TR></TABLE>> URL="https://book.douban.com/subject/26880704/"]
 
-        {
-            node [shape="box", style="rounded,filled", color="#c7c7ff", fontname="Helvetica-Light", fontsize=10, penwidth=0.5]
-
-            crossplatformgp [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/crossplatformgp.jpg"/></TD></TR><TR><TD>Cross-Platform Game<br/>Programming (2005)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1584503793/"]
-            androidndkgdcookbook [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/androidndkgdcookbook.jpg"/></TD></TR><TR><TD>Android NDK Game<br/>Development Cookbook<br/>(2013)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1782167781/"]
-        }
-
         buildingfpsgameunity [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/buildingfpsgameunity.jpg"/></TD></TR><TR><TD>Building an FPS<br/>Game with Unity (2015)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/178217480X/"]
-
-        {
-            node [shape="box", style="rounded,filled", color="#c7c7ff", fontname="Helvetica-Light", fontsize=10, penwidth=0.5]
-
-            rank=same
-            gpgemsbest [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/gpgemsbest.jpg"/></TD></TR><TR><TD>Best of Game<br/>Programming<br/>Gems (2008)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1584505710/"]
-        }
 
         gpbegin -> { unity; unreal }
 
@@ -67,18 +53,11 @@ digraph {
         unreal -> learninguegd -> blueprintsvisualscripting -> gpintermediate
 
         gpintermediate -> gpalgorithmstechniques -> gameprogrammingpatterns [arrowhead=normal, style=solid]
-        gameprogrammingpatterns -> gpmisc
-        gpintermediate -> crossplatformgp -> androidndkgdcookbook
         gpintermediate -> buildingfpsgameunity
-
-        {
-            rank=same; gameprogrammingpatterns; gpmisc
-        }
-        gpmisc -> gpgemsbest
 
         gametop [fixedsize=true,width=8,height=0.01,style=invis,label=""]
         gamebottom [fixedsize=true,width=8,height=0.01,style=invis,label=""]
         gametop -> { gpbegin; unity } [style=invis]
-        gpgemsbest -> gamebottom [style=invis]
+        gameprogrammingpatterns -> gamebottom [style=invis]
     }
 }
