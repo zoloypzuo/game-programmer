@@ -47,7 +47,6 @@ digraph {
         {
             node [shape="box", style="rounded,filled", color="#c7c7ff", fontname="Helvetica-Light", fontsize=10, penwidth=0.5]
 
-            gpgoldenrules [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/gpgoldenrules.jpg"/></TD></TR><TR><TD>Game Programming<br/>Golden Rules (2004)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1584503068/"]
             crossplatformgp [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/crossplatformgp.jpg"/></TD></TR><TR><TD>Cross-Platform Game<br/>Programming (2005)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1584503793/"]
             androidndkgdcookbook [label=<<TABLE BORDER="0" CELLSPACING="0"><TR><TD WIDTH="100" HEIGHT="100" FIXEDSIZE="TRUE"><IMG SCALE="TRUE" SRC="images/androidndkgdcookbook.jpg"/></TD></TR><TR><TD>Android NDK Game<br/>Development Cookbook<br/>(2013)</TD></TR></TABLE>> URL="https://www.amazon.com/dp/1782167781/"]
         }
@@ -70,12 +69,12 @@ digraph {
         unreal -> learninguegd -> blueprintsvisualscripting -> gpintermediate
 
         gpintermediate -> gpalgorithmstechniques -> gameprogrammingpatterns [arrowhead=normal, style=solid]
-        gameprogrammingpatterns -> gpgoldenrules -> gpmisc
+        gameprogrammingpatterns -> gpmisc
         gpintermediate -> crossplatformgp -> androidndkgdcookbook
         gpintermediate -> buildingfpsgameunity
 
         {
-            rank=same; gpgoldenrules; gpmisc
+            rank=same; gameprogrammingpatterns; gpmisc
         }
         gpmisc -> gpgemsbest
         gpmisc -> beginninggp -> advancedgp
